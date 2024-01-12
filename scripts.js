@@ -22,7 +22,7 @@ function convertValues() {
     }
 
     if(selectMoedas.value == "cup") {
-        otrosValue.innerHTML = new Intl.NumberFormat("es", {
+        otrosValue.innerHTML = new Intl.NumberFormat("es-CU", {
             style: "currency",
             currency: "CUP"
         }).format(inputValue / cubanoToday)
@@ -59,7 +59,7 @@ function changeMoeda() {
     }
 
     if(selectMoedas.value == "cup") {
-        p4.innerHTML = "CUP",
+        p4.innerHTML = "Peso cubano",
             imgUS.src = "./img/cuba.png"
     }
 
